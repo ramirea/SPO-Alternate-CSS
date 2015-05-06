@@ -1,7 +1,7 @@
-// Insert custom variables first. Can be a separate file or css
-
 // Red Theme
 // ---------
+
+// Insert custom variables here. Can be a separate file or inline scss
 $theme-primary: #f11d12;
 $o365-suitebar: #333;
 
@@ -10,3 +10,5 @@ $o365-suitebar: #333;
 @import 'cos.variables';
 @import 'cos.mixins';
 @import 'cos.theme';
+
+// Insert additional custom css below this line

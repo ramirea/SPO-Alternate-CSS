@@ -1,7 +1,7 @@
-// Insert custom variables first. Can be a separate file or css
-
 // Blue 2 Theme
 // ------------
+
+// Insert custom variables here. Can be a separate file or inline scss
 $theme-primary: #4b8bcb;
 
 
@@ -10,3 +10,5 @@ $theme-primary: #4b8bcb;
 @import 'cos.variables';
 @import 'cos.mixins';
 @import 'cos.theme';
+
+// Insert additional custom css below this line

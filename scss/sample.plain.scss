@@ -1,7 +1,7 @@
-// Insert custom variables first. Can be a separate file or css
-
 // Plain Theme
 // -----------
+
+// Insert custom variables here. Can be a separate file or inline scss
 
 $topnav-bg:             transparent;
 $topnav-text:           #0072c6;
@@ -17,3 +17,5 @@ $topnav-active-text:    $topnav-text;
 @import 'cos.variables';
 @import 'cos.mixins';
 @import 'cos.theme';
+
+// Insert additional custom css below this line
