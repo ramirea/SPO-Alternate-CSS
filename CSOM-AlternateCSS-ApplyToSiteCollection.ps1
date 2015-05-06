@@ -83,3 +83,5 @@ function getWebs($web) {
 foreach ($web in $webs) {
     getWebs($web)
 }
+
+Write-Host "script completed" -ForegroundColor Green
