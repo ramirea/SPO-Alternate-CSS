@@ -1,0 +1,19 @@
+// Insert custom variables first. Can be a separate file or css
+
+// Red Theme
+// ---------
+
+$topnav-bg:             transparent;
+$topnav-text:           #0072c6;
+
+$topnav-hover-bg:       #ccc;
+$topnav-hover-text:     #333;
+
+$topnav-active-bg:      #f2f2f2;
+$topnav-active-text:    $topnav-text;
+
+// Import theme files
+
+@import 'cos.variables';
+@import 'cos.mixins';
+@import 'cos.theme';

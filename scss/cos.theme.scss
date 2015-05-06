@@ -1,0 +1,304 @@
+// **************************************************************************
+// **************************************************************************
+//
+// CONTENTS
+// ========
+//
+// * O365 SUITE BAR
+// * TYPOGRAPHY
+// * PAGE ELEMENTS
+// ** Site Logo
+// ** Left Navigation
+// ** Top Navigation
+// ** Search Box
+// * WEB PARTS
+//
+// **************************************************************************
+// **************************************************************************
+
+/* 
+ * Office 365 Suite Bar
+ * =======================================================================
+ */
+
+.o365cs-base.o365cst.o365cs-topnavBGColor-2 {
+    background-color: $o365-suitebar !important;
+}
+
+.o365cs-base.o365cst .ms-bgc-tp, .o365cs-base.o365cst .ms-bgc-tp-h:hover,
+.o365cs-base.o365cst.ms-bgc-tp {
+    background-color: $o365-suitebar !important;
+}
+
+.o365cs-base.o365cst .o365cs-topnavLinkBackground-2 {
+    background-color: $o365-suitebar !important;
+}
+
+.o365cs-base.o365cst .ms-bgc-tdr,
+.o365cs-base.o365cst .ms-bgc-tdr-h:hover {
+    background-color: $o365-suitebar-hover !important;
+}
+
+
+/* 
+ * TYPOGRAPHY
+ * =======================================================================
+ */
+
+h1,
+h2,
+.ms-rtestate-field h1,
+h1.ms-rteElement-H1,
+.ms-rtestate-field h2,
+h2.ms-rteElement-H2{
+    color: $theme-primary;
+}
+
+.ms-rteStyle-Emphasis,
+.ms-rteStyle-IntenseEmphasis {
+    color: $theme-primary;
+}
+
+.ms-rteStyle-Emphasis,
+.ms-rteStyle-IntenseEmphasis {
+    color: $theme-primary;
+}
+
+.ms-rteStyle-Comment,
+.ms-rteStyle-Accent1 {
+    color: $theme-primary;    
+}
+
+.ms-rteStyle-Caption,
+.ms-rteStyle-Accent2 {
+    color: darken($theme-primary, 10%);
+}
+
+.ms-heroCommandLink,
+ms-heroCommandLink:visited {
+    color: $theme-primary;    
+}
+
+.ms-heroCommandLink:hover,
+.ms-heroCommandLink:active{
+    color: darken($theme-primary, 10%);
+}
+
+a,
+.ms-link:visited {
+    color: $theme-primary;    
+}
+
+.ms-webpart-titleText,
+.ms-webpart-titleText > a:hover {
+    color: $theme-primary;    
+}
+
+.ms-pivotControl-surfacedOpt:hover,
+.ms-pivotControl-overflowDot:hover,
+.ms-pivotControl-surfacedOpt-selected {
+    color: $theme-primary;    
+}
+
+
+/* 
+ * PAGE ELEMENTS
+ * =======================================================================
+ */
+
+/* 
+ * Site Logo
+ * ---------
+ */
+
+#siteIcon {
+    min-width: 182px;
+}
+
+.ms-siteicon-a {
+    max-height: 100px;
+    
+    img {
+        max-height: 100px;
+    }
+}
+
+/* 
+ * Left Navigation
+ * ---------------
+ */
+
+#sideNavBox {
+    padding-top: 29px;
+}
+
+/* 
+ * Top Navigation 
+ * --------------
+ */
+
+#DeltaTopNavigation {
+    padding: 0;
+    font-size: 1em;
+    display: block;
+    background-color: $topnav-bg;
+
+    .ms-core-listMenu-item,
+    .ms-listMenu-editLink {
+        padding: $topnav-item-padding-y $topnav-item-padding-x;
+        margin: 0;
+        color: $theme-white;
+    }
+    
+    .ms-navedit-editLinksText > span > .ms-metadata,
+    .ms-core-listMenuEdit > tr > .ms-navedit-linkCell > .ms-core-listMenu-item {
+        color: $theme-white;
+    }
+    
+    .ms-core-listMenu-item {
+        color: $topnav-text;
+        background-color: $topnav-bg;
+        transition: all 0.3s ease;
+    }
+    
+    .selected:hover .selected.ms-core-listMenu-item,
+    .selected.ms-core-listMenu-item {
+        background-color: $topnav-active-bg;
+        color: $topnav-active-text;
+    }
+
+    .ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
+        @include menu-dropdown-arrow($topnav-text);
+    }
+
+    .dynamic {
+        .ms-core-listMenu-item {
+            background-color: $theme-white;
+            color: $theme-text;
+
+            &:hover,
+            &.hover {
+                color: $theme-white;
+            }
+        }
+
+        .ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
+//            @include menu-dropdown-arrow(red);
+            
+            &:after {
+                display: inline !important;
+            }
+        }
+    }
+    
+    .ms-core-listMenu-root {
+        &,
+        ul {
+            padding: 0;
+        }
+
+        ul,
+        ul li {
+            list-style-type: none;
+        }
+        
+        .ms-core-listMenu-item:hover,
+        li.hover > .ms-core-listMenu-item {
+            color: $topnav-hover-text;
+            background-color: $topnav-hover-bg;
+            box-shadow: none;
+        }
+    }
+    
+    .dynamic-children.hover .dynamic .dynamic-children.additional-background {
+        @include menu-dropdown-arrow($theme-text);
+    }
+    
+    .dynamic-children.hover .dynamic-children .dynamic-children.ms-core-listMenu-item {
+        border-top-color: $topnav-hover-text;
+    }
+    
+//    .dynamic-children.hover .dynamic-children .dynamic-children.ms-core-listMenu-item:hover {
+//        background-color: $topnav-active-bg;   
+//    }
+}
+
+/* 
+ * Search box
+ * ----------
+ */
+.ms-srch-sb>input {
+    padding: 1.1em 0;
+}
+
+.ms-srch-sb-navLink,
+.ms-srch-sb-searchLink {
+    margin-top: 0.8em;   
+}
+
+/* 
+ * WEB PARTS
+ * =======================================================================
+ */
+
+.ms-webpart-zone {
+    padding: 0 0.5em;
+}
+
+/* 
+ * MS Tiles
+ * --------
+ */
+
+.ms-tileview-tile-content {
+    background-color: $theme-primary;   
+}
+
+.ms-tileview-tile-detailsBox {
+    transition: background 0.25s ease;
+}
+
+/* 
+ * Web Part Titles
+ * ---------------
+ */
+
+.ms-webpart-titleText {
+    padding: ($padding-default * 0.2) ($padding-default * 0.5);
+    border: 1px solid;
+    border-color: darken($wpTitle-bg, 0) darken($wpTitle-bg, 1) darken($wpTitle-bg, 3);
+    border-radius: 1px;
+}
+
+.ms-webpart-titleText,
+h2.ms-webpart-titleText > span,
+h2.ms-rteElement-H2B > span,
+h2.ms-webpart-titleText > a{
+    display: block;
+    background-color: $wpTitle-bg;
+}
+
+h2.ms-webpart-titleText > a {
+    text-decoration: underline;
+}
+
+/* 
+ * Web Part Chrome Types
+ * ---------------------
+ */
+
+.ms-WPBorderBorderOnly,
+.ms-WPBorder {
+    padding: $padding-default;
+    background-color: lighten($wpTitle-bg, 3);
+    border-color: darken($theme-grey, 2);
+}
+
+/* 
+ * Calendar View
+ * -------------
+ */
+
+.ms-acal-rootdiv {
+    padding: $padding-default * 0.5;
+}

@@ -1,0 +1,24 @@
+// MIXINS
+// ======
+
+@mixin arrow-down($size, $color) {
+	width: 0; 
+	height: 0; 
+	border-left: $size solid transparent;
+	border-right: $size solid transparent;
+	border-top: ($size*2*(0.866)) solid $color;
+}
+
+@mixin menu-dropdown-arrow($color) {
+	background: none;
+	width: 0;
+	height: 0;
+	padding: 0;
+
+	&:after {
+		content: "";
+	    display: inline-block;
+	    @include arrow-down(3px, $color);
+	    margin-left: 5px;
+	}
+}

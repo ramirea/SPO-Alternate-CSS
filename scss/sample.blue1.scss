@@ -1,0 +1,12 @@
+// Insert custom variables first. Can be a separate file or css
+
+// Red Theme
+// ---------
+$theme-primary: #2a388f;
+
+
+// Import theme files
+
+@import 'cos.variables';
+@import 'cos.mixins';
+@import 'cos.theme';
