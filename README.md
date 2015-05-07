@@ -50,7 +50,7 @@ The default Site Assets library is usually located at `/sites/sitecollection/Sit
 2. Create a folder titled "css"
 3. Upload your `.css` file to `/SiteAssets/css/`
 
-If you are using a custom theme, make sure to update the [PowerShell script]() to point to your `.css` file.
+If you are using a custom theme, make sure to update the [PowerShell script](CSOM-AlternateCSS-ApplyToSiteCollection.ps1) to point to your `.css` file.
 
 For example, to deploy the `sample.green.css` theme, you would change **lines 49-51** from this:
 
