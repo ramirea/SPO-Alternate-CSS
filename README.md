@@ -6,6 +6,7 @@ _Note: this solution does not alter the site masterpage._
 ## Instructions
 
 To implement the solution, you will:
+
 1. Generate the css file
 2. Upload the css file to your SiteAssets library
 3. Run the PowerShell script to point to the css file
