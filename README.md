@@ -72,7 +72,7 @@ $cssUrl = $rootWeb.ServerRelativeUrl + "/SiteAssets/css/sample.green.css"
 
 1. Prepare the PC you will run scripts against SPO
   * Ensure PowerShell and/or PowerShell ISe are installed on your workstation. Link - [Windows Management Framework 4.0](https://www.microsoft.com/en-us/download/details.aspx?id=40855)
-  * Ensure the `.dll`s are installed on your hard drive. The path should be `C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\16\ISAPI\`
+  * Ensure the [client DLLs](https://github.com/OfficeDev/PnP/tree/master/Assemblies) are installed on your hard drive. The path should be `C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\16\ISAPI\`
   ![CSOM .dll screenshot](img/dll-screenshot.jpg)
 2. Change the ExecutionPolicy for PowerShell. By default, you will not be able to run scripts on your PC. Make sure to be careful about what scripts you run on your workstation.
   * Here's the command to change the ExecutionPolicy:
