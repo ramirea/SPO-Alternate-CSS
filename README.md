@@ -15,7 +15,7 @@ To implement the solution, you will:
 You can either use the default theme or create a child theme. To create a child theme, you'll use [Sass](http://sass-lang.com/). Make sure to download a Sass compiler, such as [Koala](http://koala-app.com/).
 
 ### Default Theme
-To install the default theme, simply copy over the [cos.tenant.css](css/cos.tenant.css) file to your SiteAssets library in Step 2.
+To install the default theme, simply copy over the [cos.tenant.css](css/cos.tenant.css) file to your SiteAssets library in [Step 2](#2-upload-css-to-your-siteassets-library).
 
 ### Custom Child Theme
 View sample child themes by opening any of the `sample.*.scss` files. 
@@ -41,7 +41,7 @@ You can overwrite any of the variables contained in [cos.variables.scss](scss/co
 
 Once the custom theme is done, compile the Sass file using a Sass compiler, such as [Koala](http://koala-app.com/). Most compilers can be configured to auto-compile every time the file is updated (saved).
 
-* Use this new css file in Step 2 below.
+* Use this new css file in [Step 2](#2-upload-css-to-your-siteassets-library) below.
 
 ## 2. Upload CSS to your SIteAssets library
 The default Site Assets library is usually located at `https://tenant.sharepoint.com/sites/sitecollection/SiteAssets/`
