@@ -76,6 +76,7 @@ $cssUrl = $rootWeb.ServerRelativeUrl + "/SiteAssets/css/sample.green.css"
   ![CSOM .dll screenshot](img/dll-screenshot.jpg)
 2. Change the ExecutionPolicy for PowerShell. By default, you will not be able to run scripts on your PC. Make sure to be careful about what scripts you run on your workstation.
   * Here's the command to change the ExecutionPolicy:
+  
     ``PowerShell
     Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy Unrestricted
     `` 
