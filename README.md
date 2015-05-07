@@ -52,7 +52,7 @@ The default Site Assets library is usually located at `/sites/sitecollection/Sit
 
 If you are using a custom theme, make sure to update the [PowerShell script]() to point to your `.css` file.
 
-For example, to deploy the `sample.green.css` theme, you would change *lines 49-51* from this:
+For example, to deploy the `sample.green.css` theme, you would change **lines 49-51** from this:
 
 ```PowerShell
 # path to css file - change this depending on what file you use
