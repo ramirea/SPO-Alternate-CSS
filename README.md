@@ -74,13 +74,18 @@ $cssUrl = $rootWeb.ServerRelativeUrl + "/SiteAssets/css/sample.green.css"
   * Ensure PowerShell and/or PowerShell ISe are installed on your workstation. Link - [Windows Management Framework 4.0](https://www.microsoft.com/en-us/download/details.aspx?id=40855)
   * Ensure the `.dll`s are installed on your hard drive. The path should be `C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\16\ISAPI\`
   ![CSOM .dll screenshot](img/dll-screenshot.jpg)
-2. Open [CSOM-AlternateCSS-ApplyToSiteCollection.ps1](CSOM-AlternateCSS-ApplyToSiteCollection.ps1) in PowerShell ISE
+2. Change the ExecutionPolicy for PowerShell. By default, you will not be able to run scripts on your PC. Make sure to be careful about what scripts you run on your workstation.
+  * Here's the command to change the ExecutionPolicy:
+    ``PowerShell
+    Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy Unrestricted
+    `` 
+3. Open [CSOM-AlternateCSS-ApplyToSiteCollection.ps1](CSOM-AlternateCSS-ApplyToSiteCollection.ps1) in PowerShell ISE
   * Update the `$cssUrl` value on *line 50* if necessary.
-3. Click "Run"
-4. Enter your site collection URL.
+4. Click "Run"
+5. Enter your site collection URL.
   * _Also works on subsites. Enter the url of the location you would like to install the custom theme._
-5. Enter your login credentials
-6. Done
+6. Enter your login credentials
+7. Done
 
 Once the scrip finishes running, verify the changes have been applied to your site collection.
 
