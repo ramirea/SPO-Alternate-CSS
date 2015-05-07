@@ -7,7 +7,6 @@
 # get site path and login credentials
 $url = Read-Host "Enter site url"
 $enteredCreds = Get-Credential
-
  
 # reference CSOM lib
 Add-Type -Path "C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\16\ISAPI\Microsoft.SharePoint.Client.dll" 
@@ -54,9 +53,6 @@ $cssUrl = "/SiteAssets/css/cos.tenant.css"
 $clientContext.Web.AlternateCssUrl = $cssUrl
 $clientContext.Web.Update()
 
-
-
-
 function getWebs($web) {
     
     # recursive function - parses through webs to set the AlternateCssUrl value for each
@@ -81,8 +77,10 @@ function getWebs($web) {
 
 }
 
+# start updating the AlternateCssUrl value for each web
 foreach ($web in $webs) {
     getWebs($web)
 }
 
+# are we done yet?
 Write-Host "script completed" -ForegroundColor Green
