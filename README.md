@@ -15,7 +15,7 @@ To implement the solution, you will:
 You can either use the default theme or create a child theme. To create a child theme, you'll use [Sass](http://sass-lang.com/). Make sure to download a Sass compiler, such as [Koala](http://koala-app.com/).
 
 ### Default Theme
-To install the default theme, simply copy over the [cos.tenant.css](css/cos.tenant.css) file to your SiteAssets library in [Step 2](#2-upload-css-to-your-siteassets-library).
+To install the default theme, skip to [Step 3](#3-run-powershell--csom-against-your-site-collection).
 
 ### Custom Child Theme
 View sample child themes by opening any of the `sample.*.scss` files. 
@@ -44,11 +44,29 @@ Once the custom theme is done, compile the Sass file using a Sass compiler, such
 * Use this new css file in [Step 2](#2-upload-css-to-your-siteassets-library) below.
 
 ## 2. Upload CSS to your SIteAssets library
-The default Site Assets library is usually located at `https://tenant.sharepoint.com/sites/sitecollection/SiteAssets/`
+The default Site Assets library is usually located at `/sites/sitecollection/SiteAssets/`
 
 1. Open up SiteAssets
 2. Create a folder titled "css"
 3. Upload your `.css` file to `/SiteAssets/css/`
+
+If you are using a custom theme, make sure to update the [PowerShell script]() to point to your `.css` file.
+
+For example, to deploy the `sample.green.css` theme, you would change *lines 49-51* from this:
+
+```PowerShell
+# path to css file - change this depending on what file you use
+#$cssUrl = $rootWeb.ServerRelativeUrl + "/SiteAssets/css/sample.green.css"
+$cssUrl = "/SiteAssets/css/cos.tenant.css"
+```
+
+to this:
+
+```PowerShell
+# path to css file - change this depending on what file you use
+$cssUrl = $rootWeb.ServerRelativeUrl + "/SiteAssets/css/sample.green.css"
+#$cssUrl = "/SiteAssets/css/cos.tenant.css"
+```
 
 ## 3. Run PowerShell + CSOM against your Site Collection
 

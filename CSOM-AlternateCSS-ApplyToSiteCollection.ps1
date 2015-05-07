@@ -47,7 +47,8 @@ $clientContext.Load($webs)
 $clientContext.ExecuteQuery()
 
 # path to css file - change this depending on what file you use
-$cssUrl = $rootWeb.ServerRelativeUrl + "/SiteAssets/css/cos.tenant.css"
+#$cssUrl = $rootWeb.ServerRelativeUrl + "/SiteAssets/css/sample.green.css"
+$cssUrl = "/SiteAssets/css/cos.tenant.css"
 
 # set AlternateCssUrl value at root web
 $clientContext.Web.AlternateCssUrl = $cssUrl
