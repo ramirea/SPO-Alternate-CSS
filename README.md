@@ -77,9 +77,9 @@ $cssUrl = $rootWeb.ServerRelativeUrl + "/SiteAssets/css/sample.green.css"
 2. Change the ExecutionPolicy for PowerShell. By default, you will not be able to run scripts on your PC. Make sure to be careful about what scripts you run on your workstation.
   * Here's the command to change the ExecutionPolicy:
   
-    ``PowerShell
+    ```PowerShell
     Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy Unrestricted
-    `` 
+    ```
 3. Open [CSOM-AlternateCSS-ApplyToSiteCollection.ps1](CSOM-AlternateCSS-ApplyToSiteCollection.ps1) in PowerShell ISE
   * Update the `$cssUrl` value on *line 50* if necessary.
 4. Click "Run"
