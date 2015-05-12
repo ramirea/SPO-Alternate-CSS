@@ -201,12 +201,12 @@ a,
  * ----------
  */
 .ms-srch-sb > input {
-  padding: 1.1em 0;
+  padding: initial;
 }
 
 .ms-srch-sb-navLink,
 .ms-srch-sb-searchLink {
-  margin-top: 0.8em;
+  margin-top: 0;
 }
 
 /* 

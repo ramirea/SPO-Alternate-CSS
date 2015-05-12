@@ -12,6 +12,9 @@ $topnav-hover-text:     #333;
 $topnav-active-bg:      #f2f2f2;
 $topnav-active-text:    $topnav-text;
 
+$searchBox-padding:         initial;
+$searchBox-icon-margin-top: 0;
+
 // Import theme files
 
 @import 'cos.variables';

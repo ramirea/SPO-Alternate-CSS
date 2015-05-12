@@ -3,32 +3,35 @@
 $theme-primary:         #0072c6 !default;
 $theme-primary-hover:   darken($theme-primary, 7%) !default;
 
-$theme-white:           #fff !default;
+$theme-white:               #fff !default;
 
-$theme-grey:            #ccc !default;
-$theme-grey-light:      lighten($theme-grey, 13%) !default;
-$theme-grey-dark:       darken($theme-grey, 28%) !default;
-$theme-text:            #444 !default;
+$theme-grey:                #ccc !default;
+$theme-grey-light:          lighten($theme-grey, 13%) !default;
+$theme-grey-dark:           darken($theme-grey, 28%) !default;
+$theme-text:                #444 !default;
 
-$o365-suitebar:         $theme-primary !default;
-$o365-suitebar-hover:   darken($o365-suitebar, 15%) !default;
+$o365-suitebar:             $theme-primary !default;
+$o365-suitebar-hover:       darken($o365-suitebar, 15%) !default;
 
-$topnav-bg:             $theme-primary !default;
-$topnav-text:           $theme-white !default;
+$topnav-bg:                 $theme-primary !default;
+$topnav-text:               $theme-white !default;
 
-$topnav-hover-bg:       darken($topnav-bg, 7%)!default;
-$topnav-hover-text:     $topnav-text !default;
+$topnav-hover-bg:           darken($topnav-bg, 7%)!default;
+$topnav-hover-text:         $topnav-text !default;
 
-$topnav-active-bg:      darken($topnav-bg, 15%) !default;
-$topnav-active-text:    $topnav-text !default;
+$topnav-active-bg:          darken($topnav-bg, 15%) !default;
+$topnav-active-text:        $topnav-text !default;
 
-$wpTitle-bg:            #f2f2f2 !default;
-$wpTitle-color:         $theme-text !default;
+$wpTitle-bg:                #f2f2f2 !default;
+$wpTitle-color:             $theme-text !default;
 
 // LAYOUT VARIABLES
 // ----------------
 
-$padding-default:       1em !default;
+$padding-default:           1em !default;
 
-$topnav-item-padding-y: $padding-default !default;
-$topnav-item-padding-x: $padding-default !default;
+$topnav-item-padding-y:     $padding-default !default;
+$topnav-item-padding-x:     $padding-default !default;
+
+$searchBox-padding:         1.1em 0 !default;
+$searchBox-icon-margin-top: 0.8em !default;
