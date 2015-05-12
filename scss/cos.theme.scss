@@ -168,7 +168,7 @@ a,
     }
 
     .ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
-        @include menu-dropdown-arrow($topnav-text);
+        @include menu-dropdown-arrow-down($topnav-text);
     }
 
     .dynamic {
@@ -183,7 +183,7 @@ a,
         }
 
         .ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
-//            @include menu-dropdown-arrow(red);
+//            @include menu-dropdown-arrow-down(red);
             
             &:after {
                 display: inline !important;
@@ -210,8 +210,9 @@ a,
         }
     }
     
-    .dynamic-children.hover .dynamic .dynamic-children.additional-background {
-        @include menu-dropdown-arrow($theme-text);
+    .dynamic-children.hover .dynamic .dynamic-children.additional-background,
+    .dynamic-children .dynamic .dynamic-children.additional-background {
+        @include menu-dropdown-arrow-right($theme-text);
     }
     
     .dynamic-children.hover .dynamic-children .dynamic-children.ms-core-listMenu-item {

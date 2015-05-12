@@ -145,12 +145,13 @@ a,
 #DeltaTopNavigation .ms-core-listMenu-horizontalBox .dynamic-children.additional-background:after {
   content: "";
   display: inline-block;
+  margin-left: 5px;
   width: 0;
   height: 0;
   border-left: 3px solid transparent;
   border-right: 3px solid transparent;
   border-top: 5.196px solid #fff;
-  margin-left: 5px;
+  margin-bottom: 2px;
 }
 #DeltaTopNavigation .dynamic .ms-core-listMenu-item {
   background-color: #fff;
@@ -176,21 +177,23 @@ a,
   background-color: #d3160c;
   box-shadow: none;
 }
-#DeltaTopNavigation .dynamic-children.hover .dynamic .dynamic-children.additional-background {
+#DeltaTopNavigation .dynamic-children.hover .dynamic .dynamic-children.additional-background,
+#DeltaTopNavigation .dynamic-children .dynamic .dynamic-children.additional-background {
   background: none;
   width: 0;
   height: 0;
   padding: 0;
 }
-#DeltaTopNavigation .dynamic-children.hover .dynamic .dynamic-children.additional-background:after {
+#DeltaTopNavigation .dynamic-children.hover .dynamic .dynamic-children.additional-background:after,
+#DeltaTopNavigation .dynamic-children .dynamic .dynamic-children.additional-background:after {
   content: "";
   display: inline-block;
+  margin-left: 5px;
   width: 0;
   height: 0;
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
-  border-top: 5.196px solid #444;
-  margin-left: 5px;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-left: 5.196px solid #444;
 }
 #DeltaTopNavigation .dynamic-children.hover .dynamic-children .dynamic-children.ms-core-listMenu-item {
   border-top-color: #fff;

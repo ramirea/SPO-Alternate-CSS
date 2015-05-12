@@ -9,16 +9,40 @@
 	border-top: ($size*2*(0.866)) solid $color;
 }
 
-@mixin menu-dropdown-arrow($color) {
+@mixin arrow-right($size, $color) {
+	width: 0; 
+	height: 0; 
+	border-top: $size solid transparent;
+	border-bottom: $size solid transparent;
+	border-left: ($size*2*(0.866)) solid $color;
+}
+
+@mixin arrow-container-setup() {
 	background: none;
 	width: 0;
 	height: 0;
 	padding: 0;
+}
 
+@mixin arrow-spacing() {
+	content: "";
+    display: inline-block;
+    margin-left: 5px;
+}
+
+@mixin menu-dropdown-arrow-down($color) {
+	@include arrow-container-setup();
 	&:after {
-		content: "";
-	    display: inline-block;
+		@include arrow-spacing();
 	    @include arrow-down(3px, $color);
-	    margin-left: 5px;
+		margin-bottom: 2px;
+	}
+}
+
+@mixin menu-dropdown-arrow-right($color) {
+	@include arrow-container-setup();
+	&:after {
+		@include arrow-spacing();
+	    @include arrow-right(3px, $color);
 	}
 }
