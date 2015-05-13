@@ -265,7 +265,7 @@ a,
  */
 
 .ms-webpart-titleText {
-    padding: ($padding-default * 0.2) ($padding-default * 0.5);
+    padding: $wpTitle-padding-y $wpTitle-padding-x;
     border: 1px solid;
     border-color: darken($wpTitle-bg, 0) darken($wpTitle-bg, 1) darken($wpTitle-bg, 3);
     border-radius: 1px;

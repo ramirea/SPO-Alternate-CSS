@@ -1,7 +1,7 @@
 // COLOR VARIABLES
 // ---------------
-$theme-primary:         #0072c6 !default;
-$theme-primary-hover:   darken($theme-primary, 7%) !default;
+$theme-primary:             #0072c6 !default;
+$theme-primary-hover:       darken($theme-primary, 7%) !default;
 
 $theme-white:               #fff !default;
 
@@ -35,3 +35,6 @@ $topnav-item-padding-x:     $padding-default !default;
 
 $searchBox-padding:         1.1em 0 !default;
 $searchBox-icon-margin-top: 0.8em !default;
+
+$wpTitle-padding-x:         ($padding-default * 0.5) !default;
+$wpTitle-padding-y:         ($padding-default * 0.2) !default;
