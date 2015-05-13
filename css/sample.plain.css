@@ -133,7 +133,7 @@ a,
 }
 #DeltaTopNavigation .selected:hover .selected.ms-core-listMenu-item,
 #DeltaTopNavigation .selected.ms-core-listMenu-item {
-  background-color: #f2f2f2;
+  background-color: #eaeaea;
   color: #0072c6;
 }
 #DeltaTopNavigation .ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
@@ -237,7 +237,7 @@ a,
  * ---------------
  */
 .ms-webpart-titleText {
-  padding: 0.2em 0.5em;
+  padding: 0.5em 0.5em;
   border: 1px solid;
   border-color: #f2f2f2 #efefef #eaeaea;
   border-radius: 1px;
