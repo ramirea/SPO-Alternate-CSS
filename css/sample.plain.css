@@ -133,7 +133,7 @@ a,
 }
 #DeltaTopNavigation .selected:hover .selected.ms-core-listMenu-item,
 #DeltaTopNavigation .selected.ms-core-listMenu-item {
-  background-color: #eaeaea;
+  background-color: #f2f2f2;
   color: #0072c6;
 }
 #DeltaTopNavigation .ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
@@ -239,7 +239,7 @@ a,
 .ms-webpart-titleText {
   padding: 0.5em 0.5em;
   border: 1px solid;
-  border-color: #f2f2f2 #efefef #eaeaea;
+  border-color: #eaeaea #e7e7e7 #e2e2e2;
   border-radius: 1px;
 }
 
@@ -248,11 +248,7 @@ h2.ms-webpart-titleText > span,
 h2.ms-rteElement-H2B > span,
 h2.ms-webpart-titleText > a {
   display: block;
-  background-color: #f2f2f2;
-}
-
-h2.ms-webpart-titleText > a {
-  text-decoration: underline;
+  background-color: #eaeaea;
 }
 
 /* 
@@ -262,7 +258,7 @@ h2.ms-webpart-titleText > a {
 .ms-WPBorderBorderOnly,
 .ms-WPBorder {
   padding: 1em;
-  background-color: #fafafa;
+  background-color: #f2f2f2;
   border-color: #c7c7c7;
 }
 

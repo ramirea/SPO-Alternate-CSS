@@ -251,10 +251,6 @@ h2.ms-webpart-titleText > a {
   background-color: #f2f2f2;
 }
 
-h2.ms-webpart-titleText > a {
-  text-decoration: underline;
-}
-
 /* 
  * Web Part Chrome Types
  * ---------------------
