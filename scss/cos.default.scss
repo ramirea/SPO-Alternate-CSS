@@ -1,0 +1,28 @@
+// Plain Theme
+// -----------
+
+// Insert custom variables here. Can be a separate file or inline scss
+
+$topnav-bg:                 transparent;
+$topnav-text:               #0072c6;
+
+$topnav-hover-bg:           #ccc;
+$topnav-hover-text:         #333;
+
+$topnav-active-bg:          #f2f2f2;
+$topnav-active-text:        $topnav-text;
+
+$searchBox-padding:         initial;
+$searchBox-icon-margin-top: 0;
+
+$wpTitle-bg:                #eaeaea;
+$padding-default:           1em;
+$wpTitle-padding-y:         $padding-default*0.5;
+
+// Import theme files
+
+@import 'cos.variables';
+@import 'cos.mixins';
+@import 'cos.theme';
+
+// Insert additional custom css below this line
