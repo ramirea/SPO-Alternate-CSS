@@ -228,10 +228,6 @@ a,
   background-color: #f11d12;
 }
 
-.ms-tileview-tile-detailsBox {
-  transition: background 0.25s ease;
-}
-
 /* 
  * Web Part Titles
  * ---------------
