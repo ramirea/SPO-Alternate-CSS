@@ -46,8 +46,8 @@ $clientContext.Load($webs)
 $clientContext.ExecuteQuery()
 
 # path to css file
-#$cssUrl = $rootWeb.ServerRelativeUrl + "/SiteAssets/css/sample.green.css"
-$cssUrl = "/SiteAssets/css/cos.default.css"
+$cssUrl = $rootWeb.ServerRelativeUrl + "/SiteAssets/css/sample.blue3.css"
+#$cssUrl = "/SiteAssets/css/cos.default.css"
     
 # To remove custom CSS, uncomment the following line    
 # $cssUrl = ""

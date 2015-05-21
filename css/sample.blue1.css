@@ -153,6 +153,9 @@ a,
   border-top: 5.196px solid #fff;
   margin-bottom: 2px;
 }
+#DeltaTopNavigation .ms-core-listMenu-horizontalBox .selected .dynamic-children.additional-background:after {
+  border-top-color: #fff;
+}
 #DeltaTopNavigation .dynamic .ms-core-listMenu-item {
   background-color: #fff;
   color: #444;
@@ -245,6 +248,37 @@ h2.ms-rteElement-H2B > span,
 h2.ms-webpart-titleText > a {
   display: block;
   background-color: #f2f2f2;
+}
+
+.ms-webpart-titleText,
+.ms-webpart-titleText.ms-webpart-titleText,
+h2.ms-webpart-titleText,
+h2.ms-webpart-titleText > span,
+h2.ms-rteElement-H2B > span,
+h2.ms-webpart-titleText > a {
+  color: #444;
+}
+
+.ms-webpart-titleText:hover,
+h2.ms-webpart-titleText > a:hover {
+  color: #444;
+}
+
+.ms-promlink-parttitle,
+h2.mos-promlink-parttitle,
+h2.ms-promlink-parttitle.ms-webpart-titleText,
+.ms-vl-sectionHeader .ms-webpart-titleText,
+.ms-vl-sectionHeader h2.ms-webpart-titleText,
+.ms-vl-sectionHeader .ms-webpart-titleText.ms-webpart-titleText,
+.ms-vl-sectionHeader .ms-webpart-titleText.ms-webpart-titleText > span,
+.ms-vl-sectionHeader .ms-webpart-titleText > span,
+.ms-vl-sectionHeader h2.ms-webpart-titleText > span {
+  background-color: transparent;
+  border: none;
+  color: #444;
+  font-weight: normal;
+  padding: 0;
+  line-height: 2em;
 }
 
 /* 

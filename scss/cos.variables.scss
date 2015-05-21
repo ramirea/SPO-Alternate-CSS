@@ -23,7 +23,12 @@ $topnav-active-bg:          darken($topnav-bg, 15%) !default;
 $topnav-active-text:        $topnav-text !default;
 
 $wpTitle-bg:                #f2f2f2 !default;
-$wpTitle-color:             $theme-text !default;
+$wpTitle-text:             	$theme-text !default;
+$wpTitle-hover-text:        $theme-text !default;
+
+
+$WPBorder-bg:               lighten($wpTitle-bg, 3) !default;
+$WPBorder-border:           darken($theme-grey, 2) !default;
 
 // LAYOUT VARIABLES
 // ----------------

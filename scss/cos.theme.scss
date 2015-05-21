@@ -169,6 +169,11 @@ a,
 
     .ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
         @include menu-dropdown-arrow-down($topnav-text);
+        
+    }
+    
+    .ms-core-listMenu-horizontalBox .selected .dynamic-children.additional-background:after {
+        border-top-color: $topnav-active-text;
     }
 
     .dynamic {
@@ -218,6 +223,7 @@ a,
     .dynamic-children.hover .dynamic-children .dynamic-children.ms-core-listMenu-item {
         border-top-color: $topnav-hover-text;
     }
+    
     
 //    .dynamic-children.hover .dynamic-children .dynamic-children.ms-core-listMenu-item:hover {
 //        background-color: $topnav-active-bg;   
@@ -274,9 +280,40 @@ a,
 .ms-webpart-titleText,
 h2.ms-webpart-titleText > span,
 h2.ms-rteElement-H2B > span,
-h2.ms-webpart-titleText > a{
+h2.ms-webpart-titleText > a {
     display: block;
     background-color: $wpTitle-bg;
+}
+
+.ms-webpart-titleText,
+.ms-webpart-titleText.ms-webpart-titleText,
+h2.ms-webpart-titleText,
+h2.ms-webpart-titleText > span,
+h2.ms-rteElement-H2B > span,
+h2.ms-webpart-titleText > a {
+    color: $wpTitle-text;    
+}
+
+.ms-webpart-titleText:hover,
+h2.ms-webpart-titleText > a:hover {
+    color: $wpTitle-hover-text;
+}
+
+.ms-promlink-parttitle,
+h2.mos-promlink-parttitle,
+h2.ms-promlink-parttitle.ms-webpart-titleText,
+.ms-vl-sectionHeader .ms-webpart-titleText,
+.ms-vl-sectionHeader h2.ms-webpart-titleText,
+.ms-vl-sectionHeader .ms-webpart-titleText.ms-webpart-titleText,
+.ms-vl-sectionHeader .ms-webpart-titleText.ms-webpart-titleText > span,
+.ms-vl-sectionHeader .ms-webpart-titleText > span,
+.ms-vl-sectionHeader h2.ms-webpart-titleText > span {
+    background-color: transparent;
+    border: none;
+    color: $theme-text;
+    font-weight: normal;
+    padding: 0;
+    line-height: 2em;
 }
 
 //h2.ms-webpart-titleText > a {
@@ -291,8 +328,8 @@ h2.ms-webpart-titleText > a{
 .ms-WPBorderBorderOnly,
 .ms-WPBorder {
     padding: $padding-default;
-    background-color: lighten($wpTitle-bg, 3);
-    border-color: darken($theme-grey, 2);
+    background-color: $WPBorder-bg;
+    border-color: $WPBorder-border;
 }
 
 /* 
