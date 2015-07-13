@@ -1,4 +1,4 @@
-# SPO Custom CSS via PowerShell / CSOM
+# SPO Custom CSS via AlternateCssUrl Property
 How to deploy custom css to a site collection via the CSOM API.
 
 _Note: this solution does not alter the site masterpage._ 
