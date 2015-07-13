@@ -15,7 +15,7 @@ To implement the solution, you will:
 You can either use the default theme or create a child theme. To create a child theme, you'll use [Sass](http://sass-lang.com/). Make sure to download a Sass compiler, such as [Koala](http://koala-app.com/).
 
 ### Default Theme
-To install the default theme, skip to [Step 3](#3-run-powershell--csom-against-your-site-collection).
+To install the default theme, skip to [Step 3](#3-update-alternate-css-url-in-site-features).
 
 ### Custom Child Theme
 View sample child themes by opening any of the `sample.*.scss` files. 
